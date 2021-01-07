@@ -4,12 +4,15 @@ import HeaderButton from './HeaderButton';
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-      <Nav variant="tabs" defaultActiveKey="/home" as="ul">
-        <HeaderButton href='/home' buttonText='Active' />
-        <HeaderButton href='/home' buttonText='Not Active' />
-      </Nav>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Nav>
+          <HeaderButton href='/home' buttonText='Active' />
+          <HeaderButton href='/home' buttonText='Not Active' />
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
