@@ -1,12 +1,16 @@
+import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import HeaderButton from './HeaderButton';
 
 function Header() {
   return (
-    <Nav defaultActiveKey="/home" as="ul">
-      <HeaderButton href='/home' buttonText='Active' />
-      <HeaderButton href='/home' buttonText='Not Active' />
-    </Nav>
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Nav variant="tabs" defaultActiveKey="/home" as="ul">
+        <HeaderButton href='/home' buttonText='Active' />
+        <HeaderButton href='/home' buttonText='Not Active' />
+      </Nav>
+    </Navbar>
   );
 }
 
