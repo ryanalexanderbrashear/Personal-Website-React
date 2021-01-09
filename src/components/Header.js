@@ -4,13 +4,13 @@ import HeaderButton from './HeaderButton';
 
 function Header() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
+      <Navbar.Brand href='#home'>Alex Brashear</Navbar.Brand>
+      <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+      <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
         <Nav>
-          <HeaderButton href='/home' buttonText='Active' />
-          <HeaderButton href='/home' buttonText='Not Active' />
+          <HeaderButton href='https://github.com/ryanalexanderbrashear' buttonText='GitHub' />
+          <HeaderButton href='https://www.linkedin.com/in/ryanalexanderbrashear/' buttonText='LinkedIn' />
         </Nav>
       </Navbar.Collapse>
     </Navbar>
